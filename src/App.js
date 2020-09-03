@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
+import GoalList from './components/GoalList'
 
 function App() {
+  const courseGoals = [
+    { id: 'c1',text: 'Niv' },
+    { id: 'c2',text: 'Sorek' },
+    { id: 'c3',text: 'is here!' }
+  ];
   return <div>
     <h2>Hello, world!</h2>
-    <ul className="my-list">
-      <li>Niv</li>
-      <li>Sorek</li>
-      <li>is here</li>
-    </ul>
+    <GoalList goals={courseGoals} />
   </div>
 }
 
