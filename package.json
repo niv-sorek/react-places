@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "places-app",
-=======
-  "name": "places",
->>>>>>> 8beb991a729c4cb0d621d94c156c011a62819ce6
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,13 +8,9 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-<<<<<<< HEAD
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-transition-group": "^4.4.1"
-=======
-    "react-scripts": "3.4.3"
->>>>>>> 8beb991a729c4cb0d621d94c156c011a62819ce6
   },
   "scripts": {
     "start": "react-scripts start",
