@@ -47,3 +47,4 @@ const PlaceItem = (props) => {
   );
 };
 export default PlaceItem;
+ 
