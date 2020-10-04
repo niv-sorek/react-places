@@ -11,7 +11,7 @@ const DUMMY = [
     address: "Zaltopolsky 5, TLV",
     location: {
       lat: 32.0880024,
-      long: 34.7731101,
+      lng: 34.7731101,
     },
     creatorId: "u1",
   },
@@ -24,7 +24,7 @@ const DUMMY = [
     address: "Zaltopolsky 5, TLV",
     location: {
       lat: 32.0880024,
-      long: 34.7731101,
+      lng: 34.7731101,
     },
     creatorId: "u2",
   },
