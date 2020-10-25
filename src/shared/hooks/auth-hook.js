@@ -20,7 +20,7 @@ export const useAuth = () => {
         token: token,
         expiration: tokenExpirationDate.toISOString(),
       })
-    );
+    )
   }, []);
 
   const logout = useCallback(() => {

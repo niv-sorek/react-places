@@ -30,7 +30,7 @@ const Auth = () => {
     },
     false
   );
-  const authSubmitHandler = async event => {
+  const authSubmitHandler = async (event) => {
     event.preventDefault();
 
     console.log(formState.inputs);
@@ -42,10 +42,7 @@ const Auth = () => {
           JSON.stringify({
             email: formState.inputs.email.value,
             password: formState.inputs.password.value,
-          }),
-          {
-            "Content-Type": "application/json",
-          }
+          })
         );
 
         auth.login(responseData.userId, responseData.token);
@@ -57,7 +54,7 @@ const Auth = () => {
         formData.append("email", formState.inputs.email.value);
         formData.append("password", formState.inputs.password.value);
         formData.append("image", formState.inputs.image.value);
-        
+        console.log(formData.name);
         const responseData = await sendRequest(
           `${process.env.REACT_APP_BACKEND_URL}/users/signup`,
           "POST",
@@ -65,8 +62,9 @@ const Auth = () => {
         );
         console.log(formData);
         auth.login(responseData.userId, responseData.token);
+        console.log(formData);
       } catch (error) {
-        console.log(error); 
+        console.log(error);
       }
     }
   };

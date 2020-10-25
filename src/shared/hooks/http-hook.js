@@ -12,6 +12,7 @@ export const useHttpClient = () => {
       activeHttpRequests.current.push(httpAbortCtrl);
       try {
         const response = await fetch(url, {
+          // mode: "no-cors",
           method,
           body,
           headers,
@@ -28,7 +29,6 @@ export const useHttpClient = () => {
         setIsLoading(false);
         return responseData;
       } catch (err) {
- 
         setError(err.message);
         setIsLoading(false);
         throw error;
